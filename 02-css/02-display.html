@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-display</title>
+</head>
+<body>
+    <h1>display</h1>
+    <h2>display : block, inline-block</h2>
+    <style>
+        ul li{
+            /* inline-block으로 가로정렬하시면 안돼 */
+            display: inline-block;
+            width: 200px; height: 100px; 
+        }
+        ul li a{
+            display: block;
+            background-color: lightpink;
+            color: #fff;
+             /* block요소는 자동으로 가로(width)값 100%로 들어감 */
+            width: 100%;
+            /* block요소는 높이(height)값은 자동으로 안늘어남 설정해주어야 */
+            height: 100%;       
+        }
+        
+    </style>
+    <ul>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a> </li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+    </ul>
+    <hr>
+    <style>
+        .pop{
+            /* none: 오브젝트 없애기, block: 오브젝트 보이기*/
+            display: none;
+            width: 500px; height: 500px;
+            background:lightsalmon;
+        }
+    </style>
+
+    <h2>display : none</h2>
+    <div class="pop">
+        팝업
+    </div>
+</body>
+</html>

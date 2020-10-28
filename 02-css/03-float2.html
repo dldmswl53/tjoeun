@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float2:css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            text-decoration: none;
+            list-style: none;
+            color: #000;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>float2</h1>
+    <style>
+       .list-1 li{
+            float: left;
+            width: 30%; height: 100px;
+            background: lightgray;
+            border: 1px solid #000;
+            margin-right: 5%;
+            margin-bottom: 20px;
+        }
+
+        .list-1 li:nth-child(3n){
+            margin-right: 0;
+        }
+    </style>
+    <ul class="list-1">
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+    </ul>
+
+    <h2>박스정렬 type2</h2>
+    <style>
+        .list-2 {
+            background:yellow;
+        }
+        .list-2 li{
+            float: left;
+            width: 100px; height: 100px;
+            background: tomato;
+            border: 1px solid blue;
+        }
+    </style>
+
+
+    <ul class="list-2">
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+        <li>box</li>
+    </ul>
+</body>
+</html>

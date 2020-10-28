@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>ANIMATION</title> 
+</head> 
+<body>
+    <p>
+        Animation..
+    </p>
+    <style>
+p{
+    position: absolute;top: 0;left: 0;
+    width: 200px;height: 100px;
+    background:tomato;
+    color: #fff;
+    text-align: center; line-height: 100px;
+    animation-name: ani;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes ani{
+    0%{background: tomato; top: 0; left: 0;}
+    25%{background: red; top: 0; left: 100px;}
+    50%{background: orange; top: 200px; left: 200px;}
+    75%{background: green; top: 200px; left: 100px;}
+    100%{background: purple; top: 0px; left: 0px;}
+}
+    </style>
+
+    <div class="box">
+        <div class="square"></div>
+        <div class="circle"></div>
+    </div>
+    
+
+    <style>
+        .box{
+            position: relative;
+            height: 200px;
+            margin: 400px 0 200px; 
+            background: lightgray;
+        }
+
+        .square{
+            position: absolute;top: 0;left: 0;
+            width: 100px;height: 100px;
+            background: tomato;
+            opacity: 0;
+            animation-name: squ;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+        }
+        .circle{
+            position: absolute; bottom: 0; right: 0;
+             width: 100px;height: 100px;
+            background: blue;
+            border-radius: 50%;
+            opacity: 0;
+            animation-name: cir;
+            animation-duration: 1.5s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes squ{
+            0%{opacity:0; top: 0;left: 0;}
+            100%{opacity:.7; top:50px; left: 350px;}
+        }
+        @keyframes cir{
+            0%{opacity:0;bottom: 0;right: 0;}
+            100%{opacity:.7;bottom: 50px;right: 350px;}
+
+        }
+
+    </style>
+</body> 
+</html>

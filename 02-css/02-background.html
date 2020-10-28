@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-background : css</title>
+</head>
+<body>
+    <h1>background</h1>
+    <h2>background-color</h2>
+
+    <div class="bg-c">background-color</div>
+    <div class="bg-c2">background-color</div>
+    <div class="bg-c3">background-color</div>
+    <style>
+    .bg-c3{
+        background-color: #3d6772;
+    }
+    .bg-c2 {
+        background-color: rgba(110,220,251,.5);
+    }
+      .bg-c{
+          background-color: tomato;
+      }  
+    </style>
+    <h2>background-image</h2>
+    <a href="#" class="banner">banner</a>
+    <style>
+        .banner {
+            display: block;
+            background-image: url(./images/banner.jpg);
+            background-repeat: no-repeat;
+            height: 540px; width: 2400px;
+            background-color: lightsalmon;
+            background-position: 50%; 
+        }
+    </style>
+
+    <h2>이미지 스프라이트</h2>
+    <a href="#" class="sp2">이미지  스프라이트2</a>
+    <div class="sp"> 이미지 스프라이트</div>
+    <a href="#" class="naver">naver</a>
+    <a href="#" class="live">live</a>
+<style>
+    .sp2{
+        width: 312px; height: 312px;
+        background-repeat: no-repeat;
+        background-image: url(./images/sp_main.png);
+        background-position: 0 0;
+        text-indent: -9999px;
+    }
+    .sp{
+        width: 312px; height: 312px;
+        background-repeat: no-repeat;
+        background-image: url(./images/sp_main.png);
+        background-position: 0 0;
+        text-indent: -9999px;
+    }
+    .naver{
+        display: block;
+        width: 442px; height: 104px;
+        background-repeat: no-repeat;
+        background-image: url(./images/sp_main.png);
+        background-position: 0 -316px;
+        text-indent: -9999px;
+    }
+    .live{
+        display: block;
+        width: 106px; height: 44px;
+        background: url(./images/sp_main.png)  -312px -533px; no-repeat;
+        /* background: url(./images/sp_main.png)  -312px -533px; no-repeat; */
+        text-indent: -9999px;
+    }
+</style>
+<h2>background-attachment</h2>
+<div class="bg-att"></div>
+<style>
+    .bg-att{
+        height: 200px; width: 100%;
+        background: url(./images/map.jpg) 0 0 no-repeat;
+        background-attachment: fixed;
+        background-size: 100% auto;
+    }
+</style>
+
+<h2>background-size</h2>
+<div class="bg-size">bg-size</div>
+<style>
+    .bg-size{
+        width: 340px;height: 230px;
+        background: url(./images/다운로드.jpg)  50% no-repeat;
+        background-size: 100% auto;
+        /* 배경 잘려나가도 캠버스 이미지를 꽉 채울 때 */
+        background-size: cover;
+
+    }
+</style>
+<br>
+<div class="bg-size2">bg-size2</div>
+<br>
+<a href="#" class="link-light">라이트모드로 보기</a>
+<br>
+<a href="#" class="link-light-m">라이트모드로 보기</a>
+<style>
+        .link-light-m{
+        display: block;
+        width: 230px; height: 30px;
+        background: url(./images/btn.png)  0 0 no-repeat;
+        text-indent: -9999px;
+        background-size: contain;
+        }
+
+        .link-light{
+        display: block;
+        width: 252px; height: 60px;
+        background: url(./images/btn.png)  0 0 no-repeat;
+        text-indent: -9999px;
+        background-size: contain;
+        }
+        
+
+         .bg-size2{
+        width: 340px;height: 230px;
+        background: url(./images/다운로드.jpg)  0 0 no-repeat;
+        /* 영역 내 배경 이미지가 다보이게 할 때 */
+        background-size: contain; }
+</style>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

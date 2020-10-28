@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블:html</title>
+</head>
+<body>
+    <h1>테이블</h1>
+    
+<table border="1"width="100%">
+    <caption>테이블 설명</caption>
+    <colgroup>
+            <col style="width: 50%;">
+            <col span="2" style="width: 25%;">
+    </colgroup>
+    <thead>
+        <!-- 행 -->
+      <tr>
+        <!-- 열 -->
+         <th scope="col">과목</th>
+          <th scope="col">이은지</th>
+         <th scope="col">정국</th>
+        <!-- 열 -->
+        </tr>
+        <!-- 행 -->
+    </thead>
+    <tbody>
+        <tr>
+            <td scope="row">국어</td>
+            <td scope="row">70</td>
+            <td scope="row">80</td>
+        </tr>
+        <tr>
+            <td>수학</td>
+            <td>90</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>총점</td>
+            <td>160</td>
+            <td>180</td>
+        </tr>
+    </tfoot>
+</table>
+
+<hr>
+
+<table border="1"width="100%">
+    <thead>
+        <!-- 행 -->
+      <tr>
+        <!-- 열 -->
+         <th>과목</th>
+         <th colspan="2">국어</th>
+        <!-- 열 -->
+        </tr>
+        <!-- 행 -->
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">이은지</td>
+            <td>70</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>90</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>총점</td>
+            <td>160</td>
+            <td>180</td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>

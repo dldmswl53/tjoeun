@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 : html</title>
+</head>
+<body>
+    <h1>선택자</h1>
+    <style>
+        
+        ul li{
+            background:lightgray;
+            margin: 10px;
+        }
+        ul li ul li{
+            background: tomato;
+        }
+        /* ul의 자식 중 li만 선택 */
+          .nav-dep-1 > li {
+            border: 5px solid green;}
+          .nav-dep-1  > li > a{
+                border: 1px solid blue;
+            }
+    </style>
+    <ul class="nav-dep-1">
+        <li><a href="#">메뉴1</a>
+        <ul>
+            <li><a href="#">메뉴1-1</a></li>
+            <li><a href="#">메뉴1-2</a></li>
+        </ul>
+    </li>
+        <li><a href="#">메뉴2</a>
+            <ul>
+                <li><a href="#">메뉴2-1</a></li>
+                <li><a href="#">메뉴2-2</a></li>
+            </ul>
+        </li>
+        <li><a href="#">메뉴3</a>
+            <ul>
+                <li><a href="#">메뉴3-1</a></li>
+                <li><a href="#">메뉴3-2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">메뉴4</a>     
+              <ul>
+                <li><a href="#">메뉴4-1</a></li>
+                <li><a href="#">메뉴4-2</a></li>
+            </ul>
+        </li>
+    </ul>
+    
+</body>
+</html>

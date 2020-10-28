@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-boxmodel</title>
+</head>
+<body>
+    <h1>boxmodel</h1>
+    <h2>높이의 상대값</h2>
+    <style>
+        .box1{
+            width: 100%; height: 300px;
+            background-color: lightsalmon;
+            }
+        .box2 {width: 100%; height: 100%;
+        }
+        .box3{
+            width: 100%; height: 100%;
+            background-color: lightskyblue;
+        }
+    </style>
+    <div class="box1">
+        <div class="box2">
+            <div class="box3">박스3</div>
+        </div>
+
+        <h2>max-width:최대 가로사이즈</h2>
+        <style>
+            .wrap-max{
+            width: 100%; height: 500px;
+             max-width: 1280px;
+                /* block요소를 가운데 정렬할 때 */
+            margin: auto;
+            background-color: lightskyblue;
+            }
+        </style>
+        <div class="wrap-max">최대 가로사이즈 </div>
+
+        <h2>min-width:최소 가로사이즈</h2>
+        <style>
+            .wrap-min{
+                width: 100%; height: 500px;
+                min-width: 360px;
+                background-color: lightskyblue;
+            }
+        </style>
+        <div class="wrap-min">
+            최소 가로 사이즈
+        </div>
+
+        <style>
+            .wrap-min-max
+            {width: 100%; height: 700px;
+            background-color: lime;
+            max-width: 1280px;
+            min-width: 360px;
+            margin: auto;
+            } 
+        </style>
+        <div class="wrap-min-max"></div>
+
+        <h2>padding</h2>
+        <style>
+            .p-g{
+                display: inline-block;
+                background-color: magenta;
+            }
+            .p-1{
+                padding: 10px 20px 80px 50px;
+            }
+            .p-2{
+                padding: 20px;
+            }
+            .p-3{
+            padding: 10px 20px;
+            }
+            .p-4{
+                padding: 10px 5px 20px;
+            }
+
+        </style>
+        <a href="#" class="p-g p-1">버튼1</a>
+        <a href="#" class="p-g p-2">버튼2</a>
+        <a href="#" class="p-g  p-3">버튼3</a>
+        <a href="#" class="p-g p-4">버튼4</a>
+
+        <h2>padding boxsizing</h2>
+        <style>
+            .padding{
+                /* 실제 사이즈는 w300,h100 */
+                width: 200px;height: 0;
+                padding: 50px;
+                background-color: mediumpurple; }
+
+                .padding-boxsizing{
+                    width: 300px; height: 100px;
+                    padding: 50px;
+                    box-sizing: border-box;
+                    background-color: midnightblue;}
+
+
+
+        </style>
+        <div class="padding">padding</div>
+        <br>
+        <div class="padding-boxsizing">padding-boxsizing</div>
+        <br>
+        <style>
+            .m-g{
+                width: 300px;height: 100px;
+                background-color: orange;
+            }
+
+            .m-1{
+                margin: 20px;
+            }
+
+            .m-2 {
+                margin: 20px 30px 50px 40px;
+            }
+
+            .m-3{
+                margin: 200px auto 0;
+            }
+            .m-4 {
+                margin-bottom: 50px;
+                margin-right: 30px;
+                margin-top: 20px;
+                margin-left: 40px;
+            }
+        </style>
+        <h2>margin</h2>
+        <p><div class="m-g m-1">m1</div></p>
+        <p><div class="m-g m-2">m2</div></p>
+        <p><div class="m-g m-3">m3</div></p>
+        <p><div class="m-g m-4">m4</div></p>
+        <br><br><br><br><br><br><br><br>
+
+      
+</body>
+</html>

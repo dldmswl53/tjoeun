@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float:html</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #000;
+    font-family: 'Nanum Pen Script', cursive;
+}
+    </style>
+</head>
+<body>
+    <h1>float</h1>
+    <style>
+        .clear-g::after{
+            display: block;
+            clear: both;
+            content: '';
+        }
+
+        header{
+            /* float 해제방법 overflow, 높이값 둘 중 하나 설정 */
+            overflow: hidden;
+            height: 100px;
+            background: rgb(153, 96, 96);
+            margin: auto;
+            width: 80%;
+        }
+        header h1{
+            float: left;
+            background: rgb(255, 1, 1);
+            width: 100px;height: 100px;
+        }
+        header nav{
+            float: right;
+            background: rgb(230, 200, 200);
+            width: 100px;height: 100px;
+        }
+
+    </style>
+    <header>
+        <h1>로고</h1>
+        <nav>메뉴</nav>
+    </header>
+
+    <style>
+        .type2 h1{
+            float: left;
+        }
+        type2 nav{
+            float: left;
+        }
+    
+    </style>
+    <header class="type2">
+        <h1>로고</h1>
+        <nav>메뉴</nav>
+    </header>
+    
+    <style>
+        .container section{
+            float: left;
+        }
+    </style>
+    <div class="container clear-g">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+    </div>
+</body>
+</html>

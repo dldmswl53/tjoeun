@@ -1,0 +1,29 @@
+1. 구글크롬에서 열 때 기본 마진 없애는 법
+ *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+*은 전체 적용
+list style은 메뉴 앞에 점 없애는 것
+
+2. 홈페이지 가운데 정렬 - margin: auto;
+
+3.위치 세로 가운데 정렬
+align-items  2위치로 옮기고 싶을 때
+1 1 1
+2 2 2
+3 3 3
+
+4. 투명도 조절 
+rgb"a"(x,x,x,0~1사이의 수)
+
+5. 사진 크기 늘렸을 때 사진 두개 나오면
+  background-repeat: no-repeat;
+사진 한개만 나옴	
+6. a태그는 인라인 태그라 display:block해주어야함
+
+7.
+       /* background: url(./images/sp_main.png)  -312px -533px; no-repeat; */
+한번에 쓰는 법
+

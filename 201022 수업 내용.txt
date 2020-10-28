@@ -1,0 +1,37 @@
+li는 블록 요소이기 때문에 
+    ul li{
+            display: inline-block;}
+
+     ul li a{
+            display: block;
+            background-color: lightpink;
+            color: #fff;
+            width: 200px; height: 100px;
+<style>
+        .pop{
+            /* 팝업창 처음에 없어졌다가 생기는 걸 display-none */
+            display: none;
+            width: 500px; height: 500px;
+            background:lightsalmon;
+        }
+    </style>
+
+margin:auto
+홈페이지 양사이드를 똑같이 정렬
+
+
+모바일에서는 %를 사용
+
+한글폰트 연결할 때 꼭 큰따옴표 써주기
+
+가장 기본으로 사용되는 기본 설정
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 14px; font-family: '나눔스퀘어', serif;
+            color: #222;
+            line-height: 1.5; 
+            text-decoration: none;
+            box-sizing: border-box;
+        }

@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #000;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.wrap{
+    margin: 0 auto;
+    /* block요소를 가운데정렬하고 싶으면 auto */
+    width: 1200px;  
+}
+
+header{
+    background:rgba(237, 126, 126, 0.522);
+    /* float 해제 방법 */
+    height: 100px;
+    /* overflow: hidden; */
+}
+header h1{float: left;
+
+}
+header nav{
+    float: right;
+}
+.nav-depth1 li{
+    float: left;
+}
+.slide ul {
+    overflow: hidden;
+}
+
+.slide li{
+    float: left; height: 300px;
+    margin-right: 5%;
+    width: 30%;
+    background: rgb(255, 74, 74);
+}
+.slide li:last-child{
+    margin-right: 0;
+}
+
+/* float 해제 */
+.claer-g::after{
+clear: both;
+display: block;
+content: '';    
+}
+
+.container section{
+    float: left;
+    background: rgb(123, 95, 95);
+    width: 30%;
+    margin-right: 5%;
+}
+.container section:last-child{
+    margin: 0;
+}
+footer{
+    background: lightgray;
+    height: 100px;
+}
+footer h1{
+    float: left;
+    width: 10%;
+}
+footer .copyright{
+    float: left;
+    width: 30%;
+}
+
+footer .sns{
+    float: right;
+    width: 20%;
+}
