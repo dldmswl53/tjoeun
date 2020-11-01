@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="115" viewBox="0 0 115 115">
+  <defs>
+    <filter id="타원_2" x="0" y="0" width="115" height="115" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="바로가기_검색하기" transform="translate(5.5 2.5)">
+    <g transform="matrix(1, 0, 0, 1, -5.5, -2.5)" filter="url(#타원_2)">
+      <circle id="타원_2-2" data-name="타원 2" cx="50" cy="50" r="50" transform="translate(5.5 2.5)" fill="#fff"/>
+    </g>
+    <path id="패스_169" data-name="패스 169" d="M120.007,520.013l-6.3-6.3a1.567,1.567,0,0,0-.215-.144,18.65,18.65,0,1,0-2.351,2.355,1.716,1.716,0,0,0,.142.213l6.3,6.3a1.715,1.715,0,0,0,2.426-2.425Zm-20.835-3.165a15.241,15.241,0,1,1,10.779-4.464A15.147,15.147,0,0,1,99.172,516.849Z" transform="translate(-50.508 -453)" fill="#717171"/>
+  </g>
+</svg>

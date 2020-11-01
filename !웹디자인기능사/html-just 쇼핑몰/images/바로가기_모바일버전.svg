@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="115" viewBox="0 0 115 115">
+  <defs>
+    <filter id="타원_5" x="0" y="0" width="115" height="115" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="바로가기_모바일버전" transform="translate(5.5 2.5)">
+    <g transform="matrix(1, 0, 0, 1, -5.5, -2.5)" filter="url(#타원_5)">
+      <circle id="타원_5-2" data-name="타원 5" cx="50" cy="50" r="50" transform="translate(5.5 2.5)" fill="#fff"/>
+    </g>
+    <path id="ic_tablet_android_24px" d="M28,0H8C5.233,0,3,2.512,3,5.625v33.75C3,42.487,5.233,45,8,45H28c2.767,0,5-2.513,5-5.625V5.625C33,2.512,30.767,0,28,0ZM21.333,41.25H14.667V39.375h6.667Zm8.75-5.625H5.917v-30H30.083Z" transform="translate(32 28)" fill="#717171"/>
+  </g>
+</svg>

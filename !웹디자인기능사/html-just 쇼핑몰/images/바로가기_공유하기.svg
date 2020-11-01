@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="115" viewBox="0 0 115 115">
+  <defs>
+    <filter id="타원_4" x="0" y="0" width="115" height="115" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="바로가기_공유하기" transform="translate(5.5 2.5)">
+    <g transform="matrix(1, 0, 0, 1, -5.5, -2.5)" filter="url(#타원_4)">
+      <circle id="타원_4-2" data-name="타원 4" cx="50" cy="50" r="50" transform="translate(5.5 2.5)" fill="#fff"/>
+    </g>
+    <path id="ic_share_24px" d="M32.167,30.273a5.566,5.566,0,0,0-3.811,1.546L14.492,23.486a6.777,6.777,0,0,0,.175-1.406,6.777,6.777,0,0,0-.175-1.406L28.2,12.422a5.711,5.711,0,0,0,3.967,1.627A5.923,5.923,0,0,0,38,8.024a5.836,5.836,0,1,0-11.667,0,6.777,6.777,0,0,0,.175,1.406L12.8,17.683a5.711,5.711,0,0,0-3.967-1.627,6.027,6.027,0,0,0,0,12.048A5.711,5.711,0,0,0,12.8,26.478l13.844,8.353a5.841,5.841,0,0,0-.156,1.305,5.681,5.681,0,1,0,5.678-5.863Z" transform="translate(30 28)" fill="#717171"/>
+  </g>
+</svg>
