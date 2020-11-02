@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="115" viewBox="0 0 115 115">
+  <defs>
+    <filter id="타원_1" x="0" y="0" width="115" height="115" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="구성_요소_8_1" data-name="구성 요소 8 – 1" transform="translate(5.5 2.5)">
+    <g transform="matrix(1, 0, 0, 1, -5.5, -2.5)" filter="url(#타원_1)">
+      <circle id="타원_1-2" data-name="타원 1" cx="50" cy="50" r="50" transform="translate(5.5 2.5)" fill="#fff"/>
+    </g>
+    <path id="ic_person_24px" d="M24,24A10,10,0,1,0,14,14,10,10,0,0,0,24,24Zm0,5C17.325,29,4,32.35,4,39v5H44V39C44,32.35,30.675,29,24,29Z" transform="translate(26.272 26)" fill="#717171"/>
+  </g>
+</svg>
