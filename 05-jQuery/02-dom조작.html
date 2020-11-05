@@ -12,7 +12,16 @@
 <body>
     <!-- html set -->
     <script>
+        $(function () {
+            $('#btn1').click(function () {
+                $('.text').text('안녕하세요.<br>저는 이은지입니다.')
+            })
+            $('#btn2').click(function () {
+                $('.html').html('<b>안녕하세요. <br>저는 이은지입니다.</b>')
+            })
 
+
+        })
     </script>
     <button id="btn1">Show Text</button>
     <button id="btn2">Show HTML</button>
@@ -22,18 +31,29 @@
     <div class="html"></div>
 
     <!-- get, set -->
-    <script>
-
-    </script>
+    <scrip>
+        $(function () {
+            $('.btn-val').click(function () {
+                alert('내가 좋아하는 캐릭터는' + $('#val').val() + '입니다.')
+                $('#val').val(' 아이언맨')
+            })
+        })
+    </scrip>
     <h1>val()</h1>
     <p>Name:
-        <input type="text" id="val" value="Mickey Mouse"></p>
+        <input type="text" id="val" value="Mickey Mouse">
+    </p>
 
     <button class="btn-val">Show Value</button>
 
-    <script>
-
-    </script>
+    <scrip>
+        $(function () {
+            $('.btn-attr').click(function () {
+                alert($('#w3s').attr('href'))
+                $('#w3s').text('Naver').attr('href', 'https://www.naver.com')
+            })
+        })
+    </scrip>
     <h1>attr()</h1>
     <p>
         <a href="https://www.w3schools.com" id="w3s">W3Schools.com</a>
@@ -41,10 +61,44 @@
 
     <button class="btn-attr">Show href Value</button>
 
+    <br><br>
+    <!-- 전구 켜기 -->
+<script>
+            $(function () {
+            $('#btnOn').click(function () {
+                $('.img-on').attr('src', './images/pic_bulbon.gif')
+            })
+
+            $(function () {
+                $('#btnOff').click(function () {
+                    $('.img-off').attr('src', './images/pic_bulboff.gif')
+                })
+        })
+
+</script>
+
+
+    <img src="./images/pic_bulboff.gif" alt="" class="img-off">
+    <img src="./images/pic_bulbon.gif" alt="" class="img-on">
+
+    <button id="btnOn">전구 켜기</button>
+    <button id="btnOff">전구 끄기</button>
+
+    <br><br>
+
     <!-- 요소 추가하기 -->
     <script>
+            $(function () {
+
+            $(".add li").prepend('<b>태그 내 앞쪽</b>')
+            $(".add li").append('<b>태그 내 뒤쪽</b>')
+            $(".add li").before('<b>태그 밖 앞쪽</b>')
+            $(".add li").after('<b>태그 밖 뒤쪽</b>')
+        })
 
     </script>
+
+    
     <ul class="add">
         <li><a href="#">menu1</a></li>
         <li><a href="#">menu2</a></li>
@@ -56,6 +110,10 @@
 
     <!-- 요소 제거하기 -->
     <script>
+        $(function(){
+            $('.remove li').eq(0).remove()
+            $('.remove li').eq(0).empty()
+        })
 
     </script>
     <ul class="remove">

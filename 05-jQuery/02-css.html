@@ -39,16 +39,25 @@
             background: tomato;
             color: #fff;
         }
+
+        .nav-2>li ul {
+            display: none;
+        }
+
+        .nav-2>li.on ul {
+            display: block;
+        }
     </style>
 </head>
 
 <body>
     <script>
         $(function () {
-            $('.nav-1 li').click(function (){
-                    $(this).addClass('.on')
-                    $('.nav-1 li').removeClass('.on')
-                });
+            $('.nav-1 li').click(function () {
+                $(".nav-1 li").addClass('on')
+                $(this).removeClass('on')
+            });
+
         })
     </script>
     <ul class="nav nav-1">
@@ -68,7 +77,14 @@
 
     <!-- depth2 -->
     <script>
+        $(function () {
+            $('.nav-2 > li > a').on('mouseenter focus', function () {
+                $('.nav-2 >li').removeClass('on')
+                $(this).parent().addClass('on')
 
+            })
+
+        })
     </script>
     <ul class="nav nav-2">
         <li class="on">
@@ -96,7 +112,26 @@
 
     <!-- css() -->
     <script>
+        $(function () {
+            $('.css').css({
+                'padding': '20px'
+            })
+            $('.css li').css({
+                'background-color': 'lightgray',
+                'padding': '20px',
+                'margin-bottom': '10px'
+            })
 
+            $('.css li').mouseenter(function(){
+
+            })
+            // 마우스가 떠났을 때 lightgray로 배경색 변경
+            $('.css li').mouseleave(function(){
+                $(this).css({
+                    'background' : 'lightgray'     
+            })
+        })
+        })
     </script>
     <ul class="css">
         <li>menu1</li>
