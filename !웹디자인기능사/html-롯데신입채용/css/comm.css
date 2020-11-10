@@ -9,56 +9,93 @@
     color: #000;
     font-family: 'Noto Sans KR', sans-serif;
     list-style: none;
+    box-sizing: border-box;
 }
 
-.wrap {
-    margin: auto;
-    width: 1640px;
-}
+
 
 header {
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    z-index: 10000;
+    border-bottom: 1px solid rgba(87, 87, 87, 0.207);
+}
+
+header .inner {
     display: flex;
     justify-content: space-between;
     height: 80px;
-    background: #000;
+    line-height: 80px;
+    width: 1640px;
+    margin: auto;
+}
+header .inner h1{
+    padding: 10px 15px 0 10px;
+    width: 10%;
+    
 }
 
 header .nav-depth1 {
     display: flex;
     text-align: center;
-    padding: 10px;
+    width: 70%;
 }
-header .nav-depth1 li a{
+
+
+header nav .nav-depth1>li>a {
+    display: block;
+    font-size: 20px;
+    height: 80px;
+    width: 100px;
     padding: 0 40px;
+    color: white;
 }
 
-header .nav-depth2 {
-    display: flex;
-    background: #fff;
+header nav .nav-depth2 {
+    /* display: none; */
+    background: rgba(0, 0, 255, 0.144);
+    height: 0px;
+    overflow: hidden;
+    transition: height 2s;
+}
+header .nav-depth1 li:hover .nav-depth2 {
+    display: block;
+    height: 220px;
+    border-top: 3px solid #000;
+}
+
+.nav-depth2>li>a {
+    display: block;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: white;
+
+}
+
+
+header .nav-depth2 >li:hover a {
+    color: rgb(0, 0, 0);
+}
+
+
+header .utillmemu button {
+    font-size: 36px;
+    color:white;
     text-align: center;
-    justify-content: center;
+    width: 20%;
+}
+
+header .utillmemu .site-map{
+    display: none;
+}
+
+
+.slide-main img {
+    /* display: block; */
     width: 100%;
+    position: relative;
+}
 
-}
-/* header .nav-depth2 a{
-    display: block;
-    text-align: center;
-    justify-content: center;
-} */
-
-.nav-depth2 li{
-    padding: 10px;
-    display: none;
-}
-.nav-depth1 li:hover .nav-depth2 li{
-    display: block;
-}
-/* .slide ul li{
-    max-width: 100%;
-    height: 1000px; */
-
-}
-/* 
-header .utillmemu {
-    display: none;
-} */

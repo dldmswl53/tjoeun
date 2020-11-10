@@ -12,44 +12,48 @@
     box-sizing: border-box;
 }
 
-.wrap {
-    margin: auto;
-    width: 1640px;
-}
+
 
 header {
     background: rgba(0, 0, 0, 0);
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    z-index: 10000;
+    border-bottom: 1px solid rgba(87, 87, 87, 0.207);
 }
 
-.inner {
+header .inner {
     display: flex;
     justify-content: space-between;
     height: 80px;
     line-height: 80px;
     width: 1640px;
-    position: absolute;
-    top: 0;
-    left: 30px;
-    border-bottom: 1px solid rgb(126, 125, 125);
+    margin: auto;
+}
+header .inner h1{
+    padding: 10px 15px 0 10px;
+    width: 10%;
+    
 }
 
-.nav-depth1 {
+header .nav-depth1 {
     display: flex;
     text-align: center;
-    padding: 0 20px 0 0;
+width: 70%;
 }
 
-nav .nav-depth1>li>a {
+header nav .nav-depth1>li>a {
     display: block;
-    font-size: 22px;
+    font-size: 20px;
     height: 80px;
-    width: 106px;
-    padding: 0 40px ;
+    width: 100px;
+    padding: 0 40px;
     color: white;
 }
 
-.nav-depth2 {
-    display: block;
+header nav .nav-depth2 {
+    /* display: none; */
     background: rgba(0, 0, 255, 0.144);
     height: 0px;
     overflow: hidden;
@@ -64,18 +68,30 @@ nav .nav-depth1>li>a {
 
 }
 
-nav .nav-depth1 li:hover .nav-depth2 {
+header .nav-depth1 li:hover .nav-depth2 {
     display: block;
     height: 220px;
     border-top: 3px solid #000;
-}nav .nav-depth1 li:hover a {
-color: rgb(0, 0, 0);
+}
+
+header .nav-depth1 li:hover a {
+    color: rgb(0, 0, 0);
+}
+
+header .utillmemu button {
+    font-size: 36px;
+    color:white;
+    text-align: center;
+    width: 20%;
+}
+
+header .utillmemu .site-map{
+    display: none;
 }
 
 
-
-
-/* .tab-main img {
-    display: block;
+.slide-main img {
+    /* display: block; */
+    width: 100%;
     position: relative;
-} */
+}
