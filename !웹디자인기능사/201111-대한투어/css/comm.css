@@ -5,7 +5,7 @@
     padding: 0;
     line-height: 1.5;
     font-size: 16px;
-    color: #000;
+    color: #222328;
     text-decoration: none;
     list-style: none;
     font-family: 'Noto Sans KR', sans-serif;
@@ -13,23 +13,22 @@
 
 .wrap {
     width: 1000px;
-    margin-left: inherit;
 }
 
 header {
     float: left;
     height: 650px;
+    text-align: center;
+    width: 250px;
 }
 
 .main-right {
-    width: 700px;
-    margin-left: 300px;
+    width: 750px;
+    float: right;
+
 }
 
-header {
-    text-align: center;
-    width: 300px;
-}
+
 
 header .nav-depth1 {
     margin-top: 20px;
@@ -56,7 +55,7 @@ header .nav-depth1 li:hover .nav-depth2 {
 
 header .nav-depth2 {
     overflow: hidden;
-    background: rgba(82, 91, 216, 0.344);
+    background: #fff;
     height: 0;
     transition: height 2s;
 }
@@ -67,7 +66,7 @@ header .nav-depth2>li {
 }
 
 header .nav-depth2>li:hover {
-    background: rgb(82, 91, 216);
+    background: rgb(82, 91, 216,0.5);
 }
 
 .slide {
@@ -75,11 +74,12 @@ header .nav-depth2>li:hover {
     display: flex;
     overflow: hidden;
     position: relative;
+   
 }
 
 .slide ul {
-    display: flex;
-    width: 300%;
+    /* display: flex;
+    width: 300%; */
     position: absolute;
     top: 0;
     left: 0;
@@ -88,6 +88,7 @@ header .nav-depth2>li:hover {
 
 .container {
     display: flex;
+    justify-content: space-between;
     height: 200px;
 }
 
@@ -103,21 +104,21 @@ header .nav-depth2>li:hover {
 
 .container .tab h2 {
     background: #eee;
-    width: 175px;
-    height: 48px;
-    font-size: 20px;
+    width: 115px;
+    height: 30px;
+    font-size: 16px;
     text-align: center;
-    line-height: 48px;
     cursor: pointer;
+    line-height: 30px;
 }
 
 .tab section {
     width: 100%;
-    margin-right: 10px;
 }
 
 .tab .on .cont {
-    display: none;
+    display: block;
+
 }
 
 .tab .cont {
@@ -126,44 +127,99 @@ header .nav-depth2>li:hover {
 }
 
 .tab .on h2 {
-    background: rgb(82, 91, 216);
+    background: rgb(82, 91, 216,0.5);
 }
 
 .container .tab .cont {
     position: absolute;
-    top: 60px;
     left: 0;
     width: 100%;
 }
-
-.container .col3 h2 {
-    color: #707070;
-    font-size: 20px;
-}
-
-.container .col3 .cont a {
-    display: block;
-    width: 50px;    height: 20px;
-    flex-wrap: wrap;
-}
-.container .col3 .cont a img{
-    text-align: ;
-    width: 50px; height: 20px;
-}
-
-footer {
-    display: flex;
-    height: 100px;
-}
 .container section .cont .lst-bbs li{
-    border-bottom: 3px solid #000;
+    border-bottom: 2px solid #000;
+    line-height: 0.5;
 }
+.container section .cont .lst-bbs li a{
+    font-size: 11px;
+    
+}
+
 .container section .cont .lst-gallery {
     display: flex;
-    width: 370px;
+    justify-content: space-between;
+    margin-top: 50px;
 }
-.container section .cont .lst-gallery li{
+.container section .cont .lst-gallery a{
     display: block;
-    width: 30%;
-    padding: 0 10px 0 0 ;
+    width: 70px;
+    height: 65px;
 }
+
+.container section .cont .lst-gallery a img{
+    width: 73px;
+    height: 80px;
+    border: 2px solid #000;
+}
+.container .col2 h2{
+    text-indent: -9999px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+
+}
+
+
+.container .col3 h2 {
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.container .col3 .cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.col3 a{
+    display: block;
+    height: 65px;
+    margin: 0 0 15px 5px ;
+
+}
+.container .col3 .cont a img{
+    height: 65px;
+    width: 100px;
+    border-radius: 5px;}
+
+    footer h1{
+        float: left;
+        line-height: 100px;
+
+    }
+    footer .bottum-menu, .copyright{
+        float: right;
+        width: 55%;
+        text-align: right;
+
+    }
+    footer .bottum-menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    footer .bottum-menu a{
+        font-size: 13px;
+    }
+    footer .copyright address{
+        font-style: normal;
+    }
+
+    #modal .inner {
+        display: block;
+    }
+   
+
+
