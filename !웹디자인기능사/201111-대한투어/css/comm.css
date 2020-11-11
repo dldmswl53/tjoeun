@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrap {
+    width: 1000px;
+    margin-left: inherit;
+}
+
+header {
+    float: left;
+    height: 650px;
+}
+
+.main-right {
+    width: 700px;
+    margin-left: 300px;
+}
+
+header {
+    text-align: center;
+    width: 300px;
+}
+
+header .nav-depth1 {
+    margin-top: 20px;
+}
+
+header .nav-depth1>li {
+    padding: 10px 0;
+}
+
+header .nav-depth1>li>a {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+header .nav-depth1>li>a:hover {
+    border-bottom: 3px solid #000;
+}
+
+header .nav-depth1 li:hover .nav-depth2 {
+    display: block;
+    height: 100px;
+
+}
+
+header .nav-depth2 {
+    overflow: hidden;
+    background: rgba(82, 91, 216, 0.344);
+    height: 0;
+    transition: height 2s;
+}
+
+header .nav-depth2>li {
+    height: 35px;
+    line-height: 35px;
+}
+
+header .nav-depth2>li:hover {
+    background: rgb(82, 91, 216);
+}
+
+.slide {
+    height: 350px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide ul {
+    display: flex;
+    width: 300%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.container {
+    display: flex;
+    height: 200px;
+}
+
+.container section {
+    width: 30%;
+}
+
+.container .tab {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.container .tab h2 {
+    background: #eee;
+    width: 175px;
+    height: 48px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+.tab section {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.tab .on .cont {
+    display: none;
+}
+
+.tab .cont {
+    display: none;
+    width: 100%;
+}
+
+.tab .on h2 {
+    background: rgb(82, 91, 216);
+}
+
+.container .tab .cont {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+.container .col3 h2 {
+    color: #707070;
+    font-size: 20px;
+}
+
+.container .col3 .cont a {
+    display: block;
+    width: 50px;    height: 20px;
+    flex-wrap: wrap;
+}
+.container .col3 .cont a img{
+    text-align: ;
+    width: 50px; height: 20px;
+}
+
+footer {
+    display: flex;
+    height: 100px;
+}
+.container section .cont .lst-bbs li{
+    border-bottom: 3px solid #000;
+}
+.container section .cont .lst-gallery {
+    display: flex;
+    width: 370px;
+}
+.container section .cont .lst-gallery li{
+    display: block;
+    width: 30%;
+    padding: 0 10px 0 0 ;
+}
