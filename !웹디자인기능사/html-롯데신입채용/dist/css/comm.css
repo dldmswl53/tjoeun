@@ -5,6 +5,7 @@
     padding: 0;
     line-height: 1.5;
     font-size: 16px;
+
     text-decoration: none;
     color: #000;
     font-family: 'Noto Sans KR', sans-serif;
@@ -49,14 +50,14 @@ header nav .nav-depth1>li>a {
     display: block;
     font-size: 20px;
     height: 80px;
-    width: 100px;
+    width: 110px;
     padding: 0 40px;
     color: white;
 }
 
 header nav .nav-depth2 {
     /* display: none; */
-    background: rgba(45, 46, 95, 0.575);
+    background: rgba(255, 255, 255, 0.713);
     height: 0px;
     overflow: hidden;
 }
@@ -64,22 +65,23 @@ header nav .nav-depth2 {
 header .nav-depth1 li:hover .nav-depth2 {
     display: block;
     height: 220px;
-    border-top: 3px solid #000;
-    transition: height 2s;
+    border-top: 3px solid #da291c;
+    transition: height 0.5s;
 }
 
 .nav-depth2>li>a {
     display: block;
+    font-weight: 300 ;
     height: 50px;
     padding: 0 20px;
     font-size: 18px;
-    color: white;
+    color: #222;
 
 }
 
 
 header .nav-depth2>li:hover a {
-    color: rgb(0, 0, 0);
+    color: #da291c;
 }
 
 
@@ -98,6 +100,8 @@ header .utillmemu .site-map {
 .slide-main img {
     /* display: block; */
     width: 100%;
+}
+.top-slide .slick-slide {
     position: relative;
 }
 
@@ -140,30 +144,27 @@ header .utillmemu .site-map {
     position: relative;
 }
 /* 비활성화 슬라이드 */
-.top-slide .slick-slide h3 {
+.top-slide .slick-slide .cont {
     position: absolute;
     top: 45%;
-    left: 15%;
+    left: 14%;
+    /* font-size: 64px; */
+    color: white;
+    font-weight: bold;
+}
+.top-slide .title{
     font-size: 64px;
-    color: white;
-    font-weight: bold;
 }
-
-.top-slide .slick-slide p {
-    position: absolute;
-    top: 0;
-    left: 15%;
+.top-slide .subject{
     font-size: 16px;
-    color: white;
-    font-weight: bold;
-    opacity: 0;
-    transition: all 2s;
+    font-weight: 300;
+}
+
+.container{
+    display: block;
+    text-align: center;
 }
 
 
-/* 활성화 슬라이드 */
-.top-slide .slick-active p {
-    top: 52%;
-    opacity: 1;
-}
+
 
