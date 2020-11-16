@@ -1,16 +1,27 @@
 @import url("./reset.css");
+
 /* clearfix */
+/* pc 버전 */
+body {
+  background: url(../../pc2.png)0 0 no-repeat;
+  background-size: 100% auto;
+}
+
 .wrap {
+  opacity: 0.5;
+}
+
+.wrap .intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100vh;
   padding: 110px 0 110px;
   background: #326DD1 url(../../images/bg-dot.png) 0 0 no-repeat;
@@ -20,6 +31,7 @@
 header {
   color: #fff;
   text-align: center;
+  padding: 10px 20px;
 }
 
 header h1 {
@@ -45,4 +57,149 @@ footer {
   text-indent: -9999px;
   background-size: contain;
 }
+
 /*# sourceMappingURL=comm.css.map */
+.wrap {
+  position: relative;
+}
+
+.wrap-bg-black {
+  height: 100vh;
+  background: #303036;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 2.125em;
+  font-weight: 500;
+  color: #fff;
+}
+
+header .nav-open {
+  background: #fff;
+}
+
+header .nav-open .tit-wrap {
+  color: #000;
+}
+
+.nav-open {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 20%;
+  padding: 30px 0 10px 0;
+}
+
+.nav-depth1 {
+  padding: 20px 0;
+}
+
+.nav-depth1 li {
+  width: 100%;
+}
+
+.nav-depth1 li a {
+  display: block;
+  width: 100%;
+  padding: 15px 0 15px 40px;
+  text-align: left;
+}
+
+.nav-depth1 i {
+  display: inline-block;
+  margin: -2px 3px 0 0;
+  font-size: 1.25em;
+}
+
+.nav-depth1 .on {
+  background: #f9f9f9;
+  border-left: 5px solid #3399FB;
+}
+
+#nav-ham {
+  position: absolute;
+  top: 27px;
+  right: 18px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+
+}
+
+/* #this ~: #this(나 포함 안돼) 다음부터 내 동생들 중..  */
+/* #this + : #this(나 포함 안돼) 다음 동생 */
+
+#nav-ham ~ .nav-open {
+  display: none;
+}
+
+#nav-ham:checked ~ .nav-open {
+  display: block;
+}
+#nav-ham:checked ~ .nav-bg::before{
+  content: '';
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,.5);
+}
+#nav-ham:checked +label{
+  background: #fff;
+}
+
+#nav-ham:checked +label::after{
+  background: #3399fb;
+  transform: rotate(45deg);
+}
+
+#nav-ham:checked +label::before{
+  background: #3399fb;
+  transform: rotate(-45deg);
+}
+/* nav {
+  position: relative;
+} */
+
+nav label {
+  display: block;
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 32px;
+  right: 20px;
+  z-index: 1100;
+}
+
+nav label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background: #FFF;
+  border-radius: 3px;
+  width: 20px;
+  height: 3px;
+  transition: all .5s;
+}
+nav label::after{
+  position: absolute;
+  top: 7;
+  left: 0;
+  content: '';
+  display: block;
+  background: #FFF;
+  border-radius: 3px;
+  width: 20px;
+  height: 3px;
+  transition: all .5s;
+
+}
