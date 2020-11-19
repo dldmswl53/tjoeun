@@ -9,4 +9,12 @@ $(document).ready(function(){
         infinite: true,
         dots: true
       });
+
+      $('.sec2 .cont ul').slick({
+        infinite: true,
+        slidesToShow: 1,
+        autoplay:true,
+        autoplaySpeed:2000,
+      });
+      
   });
